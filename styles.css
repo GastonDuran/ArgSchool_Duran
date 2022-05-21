@@ -257,10 +257,10 @@ h2 {
 /* Página de nivel Inicial */
 
 .fotosInicial {
-    max-width: 90%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 50%, 50%;
     gap: 5px;
     position: relative;
 }
