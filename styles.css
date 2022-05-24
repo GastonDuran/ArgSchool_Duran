@@ -1,12 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Red+Rose:wght@300;700&display=swap');
 @import 'animate.css';
 
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: radial-gradient(circle, #778DA9, #0D1B2A);
+}
+
+h1 {
+    font-family: 'Red Rose', cursive;
+    color: #E0E1DD;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: solid whitesmoke 2px;
+    background-color: #778DA9;
+}
+.lema {
+    font-family: 'Red Rose', cursive;
+    color: #E0E1DD;
+    padding: 2%;
+    margin-bottom: 5px;
+}
+/* 
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
     font-size: 48px;
-    /* ¿Font-size cambia el tamaño del ícono?*/
     display: flex;
     line-height: 1;
     text-transform: none;
@@ -20,23 +43,17 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    /* Support for all WebKit browsers. */
+    
     -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
+    
     text-rendering: optimizeLegibility;
-    /* Support for Firefox. */
+    
     -moz-osx-font-smoothing: grayscale;
-    /* Support for IE. */
+    
     font-feature-settings: 'liga';
 }
 
-* {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: radial-gradient(circle, #778DA9, #0D1B2A);
-}
+
 
 .mainGrid {
     display: grid;
@@ -86,15 +103,8 @@
 
 }
 
-/* Estilos para nav y header en todas la páginas */
-h1 {
-    font-family: 'Red Rose', cursive;
-    font-size: 5em;
-    color: #E0E1DD;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    border: solid whitesmoke 2px;
-    background-color: #778DA9;
+Estilos para nav y header en todas la páginas
+
     animation: efecto_1 3s ease-in-out 1s 1;
 }
 
@@ -140,12 +150,7 @@ h1 {
     }
 }
 
-.lema {
-    font-family: 'Red Rose', cursive;
-    font-size: 2em;
-    color: #E0E1DD;
-    padding: 2%;
-    margin-bottom: 5px;
+
     animation: efecto_2 3s ease-in-out 2s 1;
 }
 
@@ -204,7 +209,7 @@ h2 {
 }
 
 
-/* MENÚ HAMBURGUESA EN PROCESO DE ARMADO */
+MENÚ HAMBURGUESA EN PROCESO DE ARMADO
 .topnavbar {
     display: list-item;
     list-style: none;
@@ -254,7 +259,7 @@ h2 {
     color: #060c12;
 }
 
-/* Página de nivel Inicial */
+Página de nivel Inicial
 
 .fotosInicial {
     max-width: 100%;
@@ -281,7 +286,7 @@ h2 {
     animation-delay: 1s;
 }
 
-/* Página de Nivel Primario */
+Página de Nivel Primario
 
 .fotosPrimaria {
     max-width: 100%;
@@ -321,7 +326,7 @@ h2 {
     }
 }
 
-/* Página de Nivel Secundario */
+Página de Nivel Secundario
 .fotosSecundaria {
     max-width: 100%;
     display: grid;
@@ -358,7 +363,7 @@ h2 {
     }
 }
 
-/* Estilos para formulario de contacto */
+Estilos para formulario de contacto
 #contacto_imagen {
     border-radius: 10px;
 }
@@ -438,7 +443,7 @@ h2 {
     cursor: pointer;
 }
 
-/* Estilos para home page */
+Estilos para home page
 #portada {
     width: 80%;
     border-radius: 5%;
@@ -810,7 +815,7 @@ h2 {
 
 }
 
-/* En el futuro, este elemento no iría, porque para eso está el ícono de la casita */
+En el futuro, este elemento no iría, porque para eso está el ícono de la casita
 .home {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
@@ -821,7 +826,7 @@ h2 {
 
 }
 
-/* Estilos de la página institucional */
+Estilos de la página institucional
 .institucional {
     background-color: #060c12;
     display: grid;
@@ -854,4 +859,4 @@ h2 {
     font-size: 20px;
     color: #E0E1DD;
     margin: 30px 40px 20px 40px;
-}
+} */
