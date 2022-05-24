@@ -14,91 +14,127 @@
 </head>
 
 <body>
-    <div class="header borde container-fluid">
-        <h1 class="h1 fs-1 container-fluid align-content-center justify-content-center col-auto">ARGENTINA SCHOOL</h1>
-        <p class="h3 lema container-fluid align-content-center justify-content-center col-auto">Hacia grandes metas por
-            caminos innovadores</p>
-        <p class="h3 lema container-fluid align-content-center col-auto">Más de cuatro décadas brindando educación
-            mixta, bilingüe y laica</p>
-        <img class="container col-xxl-12 col-lg-auto col md-auto w-auto h-auto" id="portada" src="./images/FB Portada.jpg"
+    <div class="row container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="list-group-item nav-link topnavbar__item1" aria-current="true"
+                                href="./pages/institucional.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="list-group-item nav-link topnavbar__item2" href="./pages/inicial.html">Nivel
+                                Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="list-group-item nav-link topnavbar__item1" href="./pages/primaria.html">Nivel
+                                Primario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="list-group-item nav-link topnavbar__item2" href="./pages/secundaria.html">Nivel
+                                Secundario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="list-group-item nav-link topnavbar__item1"
+                                href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 topnavbar__item2" type="search"
+                            placeholder="Ingrese su búsqueda" aria-label="Search">
+                        <button class="btn btn-outline-success topnavbar__item1" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <h1 class="h1 p-1 align-self-baseline container col-auto">- ARGENTINA SCHOOL -</h1>
+        <p class="h3 p-1 lema container-fluid align-content-center justify-content-center col-auto">"Hacia grandes metas
+            por
+            caminos innovadores"</p>
+        <img class="d-block p-1 col-xxl-12 col-lg-auto col md-auto w-100 h-100" id="portada" src="./images/FB Portada.jpg"
             alt="Frente edilicio de jardín de infantes y de escuela primaria-secundaria">
+        <p class="h3 p-1 lema container-fluid align-content-center col-auto">Más de cuatro décadas brindando educación
+            mixta, bilingüe y laica</p>
     </div>
-        <div class="nav borde">
-            <ul class="topnavbar">
-                <li><a class="topnavbar__item1" href="./pages/institucional.html">Institucional</a></li>
-                <li><a class="topnavbar__item2" href="./pages/inicial.html">Nivel Inicial</a></li>
-                <li><a class="topnavbar__item1" href="./pages/primaria.html">Nivel Primario</a></li>
-                <li><a class="topnavbar__item2" href="./pages/secundaria.html">Nivel Secundario</a></li>
-                <li><a class="topnavbar__item1" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="main borde">
-            <div class="fotoNivel">
-                <img class="fotoNivel__item" src="./images/Jardin2.jpg" alt="Patio de juegos del jardín de infantes"
-                    width="350">
-                <img class="fotoNivel__item" src="./images/Prima2.jpg" alt="Patio de recreo de Primaria" width="350">
-                <img class="fotoNivel__item" src="./images/Hockey1.jpg" alt="Secundaria en campo de hockey" width="350">
-            </div>
-            <div>
-                <p class="nivelText__click">Haga click en la foto para acceder a su respectivo nivel</p>
-            </div>
-            <div class="iconoNivel">
-                <span class="material-icons">child_care</span>
-                <span class="material-icons">calendar_month</span>
-                <span class="material-icons">escalator_warning</span>
-                <span class="material-icons">event_available</span>
-                <span class="material-icons">school</span>
-                <span class="material-icons">event</span>
-            </div>
-            <div class="nivelText">
-                <p class="nivelText__click">Haga click sobre el ícono para acceder a la información detallada de cada
-                    nivel</p>
-            </div>
-            <div class="fotoArte">
-                <p class="fotoArte__text">Nos proponemos el desarrollo individual y social a través del estímulo
-                    creativo y
-                    artístico</p>
-                <img class="fotoArte__item" src="./images/PrimaArte.jpg" alt="Estudiantes de primaria en clase de arte"
-                    width="360">
 
-                <img class="fotoArte__item" src="./images/SecuArte2.jpg" alt="Obra de arte plástico por goteo pendular"
-                    width="360">
-            </div>
-            <div class="fotoCiencia">
-                <img class="fotoCiencia__item" src="./images/PrimaCiencia.jpg"
-                    alt="Estudiante de primaria en clase de ciencia" width="360">
-                <img class="fotoCiencia__item" src="./images/Secu-ciencia.jpg" alt="Estudiantes observando experimentos"
-                    width="360">
-                <p class="fotoCiencia__text">Nos lanzamos a la aventura del descubrimiento a través del estímulo de la
-                    curiosidad humana innata</p>
-            </div>
-            <div class="videoAmbiental">
-                <iframe class="videoAmbiental__iframe" width="640" height="480"
-                    src="https://www.youtube.com/embed/ZJjks48czVw?start=60" title="YouTube video player" frameborder=5"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p class="videoAmbiental__text">Nuestro compromiso con el planeta Tierra y las generaciones futuras es
-                    un
-                    desafío presente.
-                    Desde nuestra casa de estudios, comprendemos la necesidad de formar en valores acordes a los tiempos
-                    que
-                    vivimos.
-                    Si cuidamos nuestra Tierra, ella cuidará de nosotros.</p>
-            </div>
+    <div class="row container-fluid fotoNivel">
+        <img class="col-4 fotoNivel__item" src="./images/Jardin2.jpg"
+            alt="Patio de juegos del jardín de infantes">
+        <img class="col-4 fotoNivel__item" src="./images/Prima2.jpg" alt="Patio de recreo de Primaria">
+        <img class="col-4 fotoNivel__item" src="./images/Hockey1.jpg" alt="Secundaria en campo de hockey">
+    </div>
+
+    <div class="row container-fluid nivelText justify-content-center">
+        <p class="col-12 nivelText__click">Haga click en la foto para acceder a su respectivo nivel</p>
+    </div>
+
+    <div class="row container-fluid iconoNivel">
+        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Requisitos de ingreso a Inicial">child_care</span>
+        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Calendario escolar Nivel Inicial">calendar_month</span>
+        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Requisitos de ingreso a Primaria">escalator_warning</span>
+        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Calendario escolar Nivel Primario">event_available</span>
+        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Requisitos de ingreso a Secundaria">school</span>
+        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Calendario escolar Nivel Secundario">event</span>
+    </div>
+
+    <div class="row container-fluid nivelText">
+        <p class="col-auto nivelText__click">Haga click sobre el ícono para acceder a la información detallada de cada
+            nivel</p>
+    </div>
+
+    <div class="row container-fluid fotoArte">
+        <div class="col-4 col-md-12 justify-content-center align-content-center"><p class="h3  fotoArte__text">Nos proponemos el desarrollo individual y social a través del estímulo
+            creativo y
+            artístico</p></div>
+        <div class="col-4 col-md-6 justify-content-center align-content-center"><img class="w-100 fotoArte__item" src="./images/PrimaArte.jpg"
+            alt="Estudiantes de primaria en clase de arte"></div>
+        <div class="justify-content-center align-content-center col-4 col-md-6"><img class="w-100 col-4 fotoArte__item" src="./images/SecuArte2.jpg"
+            alt="Obra de arte plástico por goteo pendular"></div>
+    </div>
+
+    <div class="row container-fluid fotoCiencia">
+        <div class="container-fluid col-4 col-md-6 justify-content-center align-content-center"><img class="w-100 fotoCiencia__item" src="./images/PrimaCiencia.jpg"
+            alt="Estudiante de primaria en clase de ciencia"></div>
+        <div class="container-fluid col-4 col-md-6 justify-content-center align-content-center"><img class="w-100 fotoCiencia__item" src="./images/Secu-ciencia.jpg"
+            alt="Estudiantes observando experimentos"></div>
+        <div class="container-fluid col-4 col-md-12 justify-content-center align-content-center"><p class="h3 fotoCiencia__text">Nos lanzamos a la aventura del descubrimiento a través del estímulo de la
+            curiosidad humana innata</p></div>
+    </div>
+
+    <div class="row container-fluid videoAmbiental">
+        <div class="container-fluid justify-content-center align-content-center"><iframe class="videoAmbiental__iframe"
+            src="https://www.youtube.com/embed/ZJjks48czVw?start=60" title="YouTube video player" frameborder=5"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen width="576" height="300" object-fit="contain"></iframe></div>
+        <div class="container-fluid justify-content-center align-content-center"><p class="h3 videoAmbiental__text">Nuestro compromiso con el planeta Tierra y las generaciones futuras es
+            un
+            desafío presente.
+            Desde nuestra casa de estudios, comprendemos la necesidad de formar en valores acordes a los tiempos
+            que
+            vivimos.
+            Si cuidamos nuestra Tierra, ella cuidará de nosotros.</p></div>
+    </div>
+
+    <div class="footer borde">
+        <div class="socialIcons">
+            <img class="socialIcons__item" src="./images/facebook.png" alt="Icono de Facebook">
+            <img class="socialIcons__item" src="./images/instagram.png" alt="Icono de Instagram">
+            <img class="socialIcons__item" src="./images/home_FILL0_wght400_GRAD0_opsz48.png" alt="Icono de Inicio">
+            <img class="socialIcons__item" src="./images/sobre.png" alt="Icono de correo electrónico">
+            <img class="socialIcons__item" src="./images/whatsapp.png" alt="Icono de Whatsapp">
         </div>
-        <div class="footer borde">
-            <div class="socialIcons">
-                <img class="socialIcons__item" src="./images/facebook.png" alt="Icono de Facebook">
-                <img class="socialIcons__item" src="./images/instagram.png" alt="Icono de Instagram">
-                <img class="socialIcons__item" src="./images/home_FILL0_wght400_GRAD0_opsz48.png" alt="Icono de Inicio">
-                <img class="socialIcons__item" src="./images/sobre.png" alt="Icono de correo electrónico">
-                <img class="socialIcons__item" src="./images/whatsapp.png" alt="Icono de Whatsapp">
-            </div>
-            <a class=" home" href="./index.html">Inicio</a>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+        <a class=" home" href="./index.html">Inicio</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
