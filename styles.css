@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: radial-gradient(circle, #778DA9, #0D1B2A);
+    background-image: radial-gradient(circle, #435368, #0D1B2A);
 }
 
 h1 {
@@ -17,7 +17,10 @@ h1 {
     border: dashed whitesmoke 2px;
     border-radius: 5%;
     background-color: #778DA9;
-    animation: efecto_1 4s ease-in-out 2s 1;
+    animation: bounce;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    /* animation: efecto_1 4s ease-in-out 2s 1; */
 }
 
 .lema {
@@ -26,10 +29,13 @@ h1 {
     padding: 2%;
     margin-bottom: 5px;
     border-radius: 5%;
-    animation: efecto_2 4s ease-in-out 1s 1;
+    animation: bounce;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    /* animation: efecto_2 4s ease-in-out 1s 1; */
 }
 
-@keyframes efecto_1 {
+/* @keyframes efecto_1 {
     0% {
         font-size: 4em;
         color: azure;
@@ -111,7 +117,7 @@ h1 {
         font-size: 2em;
         color: #E0E1DD
     }
-}
+} */
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -119,11 +125,17 @@ h2 {
     color: #E0E1DD;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    animation: tada;
+    animation-duration: 500ms;
+    animation-delay: 2s;
 }
 
 .topnavbar__item1,
 .topnavbar__item2 {
     font-family: 'Josefin Sans', sans-serif;
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
 }
 
 /* Estilos para home page */
@@ -134,10 +146,13 @@ h2 {
 
 #portada:hover {
     cursor: pointer;
-    animation: efecto_3 4s ease-in-out 1s infinite;
+    animation:shakeY;
+    animation-duration: 500ms;
+    /* animation: efecto_3 4s ease-in-out 1s infinite;
+} */
 }
 
-@keyframes efecto_3 {
+/* @keyframes efecto_3 {
     10% {
         width: 90%;
     }
@@ -177,26 +192,23 @@ h2 {
     100% {
         width: 100%;
     }
-}
+} */
 
 .iconoNivel {
-    background-color: #778DA9;
+    background-color: rgba(0,0,0,1);
+    color: azure;
     padding: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    object-fit: cover;
 }
 
-#portada {
-    width: 100%;
-    border-radius: 5%;
-    }
-
-.iconoNivel {
-    justify-content: space-between;
-    align-content: stretch;
+.iconoNivel:hover {
+    animation: tada;
+    animation-duration: 500ms;
     }
 
 .fotoNivel__item {
@@ -209,14 +221,17 @@ h2 {
 .fotoNivel__item:hover {
     cursor: pointer;
     justify-content: center;
-    animation: efecto_4;
+    animation: pulse;
+    animation-duration: 2s;
+    /* animation: efecto_4;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-delay: 1s;
+ */
 }
 
-@keyframes efecto_4 {
+/* @keyframes efecto_4 {
     10% {
         width: 50px;
     }
@@ -236,7 +251,7 @@ h2 {
     100% {
         width: 150px;
     }
-}
+} */
 
 .fotoPortada {
     background-color: #778DA9;
@@ -248,32 +263,46 @@ h2 {
     width: 100%;
     margin-bottom: 4%;
     background-color: #778DA9;
+    object-fit: cover;
 }
 
 .nivelText__click {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
     color: #E0E1DD;
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    object-fit: cover;
 }
 .videoAmbiental__iframe {
     object-fit: cover;
 
+}
+.fotoArte {
+    object-fit: cover;
+    animation: zoomInLeft;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-iteration-count: 2;
 }
 
 .fotoArte__item {
     flex-wrap: wrap;
     border-style: dashed;
     border-radius: 5%;
-    padding: 2%;
+    object-fit: cover;
 }
 
 .fotoArte__item:hover {
     cursor: pointer;
-    animation: efecto_5;
+    animation: zoomIn;
+    animation-duration: 3s;
+    /* animation: efecto_5;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    animation-delay: 1s;
+    animation-delay: 1s; */
 
 }
 
@@ -283,30 +312,41 @@ h2 {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+.fotoArte__text:hover {
+    animation: zoomInLeft;
+    animation-duration: 2s;
+}
 
 .fotoCiencia {
     display: flex;
     background-color: #778DA9;
     margin-bottom: 5%;
+    object-fit: cover;
+    animation:zoomInRight;
+    animation-duration: 5s;
+    animation-delay: 11s;
+    animation-iteration-count: 2;
 }
 
 .fotoCiencia__item {
     flex-wrap: wrap;
     border-style: dashed;
     border-radius: 5%;
-    padding: 2%;
+    object-fit: cover;
 }
 
 .fotoCiencia__item:hover {
     cursor: pointer;
-    animation: efecto_5;
+    animation: zoomIn;
+    animation-duration: 2s;
+    /* animation: efecto_5;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    animation-delay: 1s;
+    animation-delay: 1s; */
 }
 
-@keyframes efecto_5 {
+/* @keyframes efecto_5 {
     50% {
         width: 90%
     }
@@ -330,14 +370,20 @@ h2 {
     100% {
         width: 140%;
     }
-}
+} */
 
 .fotoCiencia__text {
     font-family: 'Red Rose', cursive;
     color: #E0E1DD;
     margin-top: 2%;
     margin-bottom: 2%;
+    object-fit: cover;
 }
+.fotoCiencia__text:hover {
+    animation: zoomInRight;
+    animation-duration: 2s;
+}
+
 @media only screen and (max-width:767px) {
     .fotoCiencia__text {
         font-size: medium;
@@ -389,9 +435,15 @@ h2 {
 }
 
 .socialIcons__item {
-    background-color: #778DA9;
+    background-color: rgba(0,0,0,1);
+    object-fit: cover;
     cursor: pointer;
+    border-radius: 40%;
     height: 24px;
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
 }
 
 @media only screen and (max-widht:960px) {
@@ -413,9 +465,6 @@ h2 {
         grid-column-end: 3;
         grid-row-start: 3;
     }
-
-
-
 }
 
 .material-icons {
@@ -429,7 +478,8 @@ h2 {
     letter-spacing: normal;
     white-space: nowrap;
     direction: ltr;
-    background-color: #778DA9;
+    background-color: rgba(0,0,0,1);
+    color: azure;
     margin-top: 1%;
     margin-bottom: 1%;
     flex-wrap: wrap;
@@ -619,7 +669,8 @@ h2 {
     grid-column: 1 /4;
     grid-row: 4;
     background-image: radial-gradient(circle, #778DA9, #0D1B2A);
-padding: 1%;
+    padding: 0;
+    object-fit: cover;
 }
 
 /* Página de nivel Inicial */
