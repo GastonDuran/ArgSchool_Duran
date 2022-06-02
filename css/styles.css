@@ -245,7 +245,7 @@
 /* Estilos para formulario de contacto */
 h2 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: medium;
+  font-size: x-large;
   color: #E0E1DD;
   margin-top: 1rem;
   margin-bottom: 5%;
@@ -263,7 +263,7 @@ h2 {
   grid-template-rows: repeat 4, 25%;
   gap: 2rem;
   font-family: "Josefin Sans", sans-serif;
-  font-size: small;
+  font-size: x-small;
   justify-content: stretch;
   object-fit: contain;
   color: whitesmoke;
@@ -275,14 +275,16 @@ h2 {
     .contacto {
       font-size: medium; } }
   .contacto .contacto__nombre {
+    grid-column: auto;
     grid-row: 1; }
   .contacto .contacto__email {
+    grid-column: auto;
     grid-row: 2; }
   .contacto .contacto__texto {
     grid-column: 2/5;
     grid-row: 1/5; }
   .contacto .contacto__asunto {
-    border-radius: 10px;
+    grid-column: auto;
     grid-row: 3; }
   .contacto .contacto__enviar {
     display: flex;
@@ -291,7 +293,7 @@ h2 {
   .contacto .contacto__enviar-boton {
     width: 60%;
     height: 60%;
-    border-radius: 8px;
+    grid-column: auto;
     grid-row: 4;
     background-color: #778DA9;
     border-color: whitesmoke;

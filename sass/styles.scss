@@ -54,8 +54,6 @@
     }
 }
 
-
-
 .iconoNivel {
     background-color: rgba(0,0,0,1);
     color: $color_tipografia1;
@@ -298,7 +296,7 @@
 
 h2 {
     font-family: $fuente_2;
-    font-size: $fuente_md;
+    font-size: $fuente_xl;
     color: $color_tipografia2;
     margin-top: 1rem;
     margin-bottom: $margen_inferior;
@@ -316,7 +314,7 @@ h2 {
     grid-template-rows: repeat (4, 25%);
     gap: 2rem;
     font-family: $fuente_2;
-    font-size: $fuente_sm;
+    font-size: $fuente_xs;
     justify-content: stretch;
 
     @media only screen and (min-width:600px) {
@@ -331,10 +329,12 @@ h2 {
     height: 100%;
 
         .contacto__nombre {
+            grid-column: auto;
             grid-row: 1;
         }
         
         .contacto__email {
+            grid-column: auto;
             grid-row: 2;
             
         }
@@ -345,7 +345,7 @@ h2 {
         }
         
         .contacto__asunto {
-            border-radius: 10px;
+            grid-column: auto;
             grid-row: 3;
         }
         
@@ -358,7 +358,7 @@ h2 {
         .contacto__enviar-boton {
             width: 60%;
             height: 60%;
-            border-radius: 8px;
+            grid-column: auto;
             grid-row: 4;
             background-color: $color_borde_fondo;
             border-color: $color_tipografia1;
