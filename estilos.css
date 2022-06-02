@@ -20,7 +20,6 @@ h1 {
     animation: bounce;
     animation-duration: 1s;
     animation-delay: 1s;
-    /* animation: efecto_1 4s ease-in-out 2s 1; */
 }
 
 .lema {
@@ -32,92 +31,7 @@ h1 {
     animation: bounce;
     animation-duration: 1s;
     animation-delay: 1.5s;
-    /* animation: efecto_2 4s ease-in-out 1s 1; */
 }
-
-/* @keyframes efecto_1 {
-    0% {
-        font-size: 4em;
-        color: azure;
-    }
-
-    10% {
-        font-size: 3em;
-        color: #91b3de;
-    }
-
-    25% {
-        font-size: 2em;
-        color: rgb(39, 39, 57);
-    }
-
-    45% {
-        font-size: 1em;
-        color: #91b3de;
-    }
-
-    65% {
-        font-size: 2em;
-        color: azure;
-    }
-
-    45% {
-        font-size: 3em;
-        color: #91b3de;
-    }
-
-    85% {
-        font-size: 4em;
-        color: rgb(39, 39, 57);
-    }
-
-    100% {
-        font-size: 5em;
-        color: #E0E1DD
-    }
-}
-
-@keyframes efecto_2 {
-    0% {
-        font-size: 1em;
-        color: rgb(39, 39, 57)
-    }
-
-    10% {
-        font-size: 0.5em;
-        color: #91b3de;
-    }
-
-    25% {
-        font-size: 1em;
-        color: azure;
-    }
-
-    45% {
-        font-size: 1.5em;
-        color: #91b3de;
-    }
-
-    65% {
-        font-size: 2em;
-        color: rgb(39, 39, 57);
-    }
-
-    45% {
-        font-size: 1.25em;
-        color: #91b3de;
-    }
-
-    85% {
-        font-size: 0.75em;
-        color: azure;
-    }
-
-    100% {
-        font-size: 2em;
-        color: #E0E1DD
-    }
-} */
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -222,16 +136,6 @@ h2 {
     object-fit: cover;
 }
 
-/* .fotoArte__item:hover {
-    cursor: pointer;
-    animation: efecto_5;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-delay: 1s;
-
-} */
-
 .fotoArte__text {
     font-family: 'Red Rose', cursive;
     color: #E0E1DD;
@@ -263,41 +167,6 @@ h2 {
     animation-delay: 3s;
     animation-iteration-count: 1;
 }
-
-/* .fotoCiencia__item:hover {
-    cursor: pointer;
-    animation: efecto_5;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-delay: 1s;
-}
-
-@keyframes efecto_5 {
-    50% {
-        width: 90%
-    }
-
-    60% {
-        width: 100%;
-    }
-
-    70% {
-        width: 110%;
-    }
-
-    80% {
-        width: 120%;
-    }
-
-    90% {
-        width: 130%;
-    }
-
-    100% {
-        width: 140%;
-    }
-} */
 
 .fotoCiencia__text {
     font-family: 'Red Rose', cursive;
@@ -336,6 +205,22 @@ h2 {
     .videoAmbiental__iframe {
     width: 300px;
     height: 150px;   
+    }
+}
+
+@media only screen and (max-width:302px) {
+    .fotoArte__text {
+        font-size: x-small;
+    }
+    .fotoCiencia__text {
+        font-size: x-small;
+    }
+    .videoAmbiental__text {
+        font-size: x-small;
+    }
+    .videoAmbiental__iframe {
+        width: 150px;
+        height: 80px;
     }
 }
 
@@ -548,16 +433,4 @@ h2 {
     font-size: 20px;
     color: #E0E1DD;
     margin: 30px 40px 20px 40px;
-}
-
-@media only screen and (min-width:768px) {
-    .fotosPrimaria,
-    .fotosSecundaria,
-    .fotosInicial  {
-        display: grid;
-        grid-template-columns: 50%, 50%;
-        grid-template-rows: repeat (4, 1fr);
-        gap: 1%;
-        position: relative;
-    }
 }
