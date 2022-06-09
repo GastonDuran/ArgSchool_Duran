@@ -367,3 +367,75 @@ body {
         @extend.propositos
     }
 }
+
+// Estilos para página de nivel primario
+
+.main_primaria {
+    h2 {
+        @include H2;
+        @include animation (1s, 2s, 4);
+    }
+
+    .primaria_text1 {
+        @include main_text
+    }
+
+    .propositos {
+        line-height: 1.5rem;
+        list-style: square;
+
+        .primaria_text1 {
+            text-align: left;
+
+            @media only screen and (min-width:600px) {
+                font-size: map-get($fnsz, md);
+                line-height: 2.5rem;
+            }
+
+            @media only screen and (min-width:992px) {
+                font-size: map-get($fnsz, xl);
+                line-height: 3.5rem;
+            }
+        }
+    }
+
+    .talleres {
+        @extend.propositos
+    }
+}
+
+// Estilos para página de nivel secundario
+
+.main_secu {
+    h2 {
+        @include H2;
+        @include animation (1s, 2s, 4);
+    }
+
+    .secu_text1 {
+        @include main_text
+    }
+
+    .propositos {
+        line-height: 1.5rem;
+        list-style: square;
+
+        .secu_text1 {
+            text-align: left;
+
+            @media only screen and (min-width:600px) {
+                font-size: map-get($fnsz, md);
+                line-height: 2.5rem;
+            }
+
+            @media only screen and (min-width:992px) {
+                font-size: map-get($fnsz, xl);
+                line-height: 3.5rem;
+            }
+        }
+    }
+
+    .talleres {
+        @extend.propositos
+    }
+}

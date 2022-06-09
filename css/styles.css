@@ -427,3 +427,85 @@ body {
       .main_inicial .propositos .inicial_text1, .main_inicial .talleres .inicial_text1 {
         font-size: x-large;
         line-height: 3.5rem; } }
+
+.main_primaria h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: xx-large;
+  color: #E0E1DD;
+  margin-top: 1rem;
+  margin-bottom: 5%;
+  animation: pulse;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: 4; }
+
+.main_primaria .primaria_text1 {
+  font-family: "Red Rose", cursive;
+  color: #E0E1DD;
+  font-size: x-large;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .main_primaria .primaria_text1 {
+      font-size: medium; } }
+  @media (max-width: 575px) {
+    .main_primaria .primaria_text1 {
+      font-size: small; } }
+  @media (max-width: 302px) {
+    .main_primaria .primaria_text1 {
+      font-size: x-small; } }
+
+.main_primaria .propositos, .main_primaria .talleres {
+  line-height: 1.5rem;
+  list-style: square; }
+  .main_primaria .propositos .primaria_text1, .main_primaria .talleres .primaria_text1 {
+    text-align: left; }
+    @media only screen and (min-width: 600px) {
+      .main_primaria .propositos .primaria_text1, .main_primaria .talleres .primaria_text1 {
+        font-size: medium;
+        line-height: 2.5rem; } }
+    @media only screen and (min-width: 992px) {
+      .main_primaria .propositos .primaria_text1, .main_primaria .talleres .primaria_text1 {
+        font-size: x-large;
+        line-height: 3.5rem; } }
+
+.main_secu h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: xx-large;
+  color: #E0E1DD;
+  margin-top: 1rem;
+  margin-bottom: 5%;
+  animation: pulse;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: 4; }
+
+.main_secu .secu_text1 {
+  font-family: "Red Rose", cursive;
+  color: #E0E1DD;
+  font-size: x-large;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .main_secu .secu_text1 {
+      font-size: medium; } }
+  @media (max-width: 575px) {
+    .main_secu .secu_text1 {
+      font-size: small; } }
+  @media (max-width: 302px) {
+    .main_secu .secu_text1 {
+      font-size: x-small; } }
+
+.main_secu .propositos, .main_secu .talleres {
+  line-height: 1.5rem;
+  list-style: square; }
+  .main_secu .propositos .secu_text1, .main_secu .talleres .secu_text1 {
+    text-align: left; }
+    @media only screen and (min-width: 600px) {
+      .main_secu .propositos .secu_text1, .main_secu .talleres .secu_text1 {
+        font-size: medium;
+        line-height: 2.5rem; } }
+    @media only screen and (min-width: 992px) {
+      .main_secu .propositos .secu_text1, .main_secu .talleres .secu_text1 {
+        font-size: x-large;
+        line-height: 3.5rem; } }
