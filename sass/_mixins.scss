@@ -1,0 +1,62 @@
+@mixin animation ($delay, $duration, $count)
+{
+    animation: pulse;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-iteration-count: $count;
+}
+@mixin wrap-dashed-round {
+            flex-wrap: wrap;
+            border-style: $borde_punteado;
+            border-radius: $borde_redondo;
+            object-fit: cover;
+}
+
+@mixin H2 {
+        font-family: $fuente_2;
+        font-size: map-get($fnsz, xxl);
+        // font-size: map-get($fnsz:xxl);
+        color: $color_tipografia2;
+        margin-top: 1rem;
+        margin-bottom: $margen_inferior;
+}
+
+@mixin main_text {
+    font-family: $fuente_1;
+    color: $color_tipografia2;
+    font-size: map-get($fnsz, xl);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @media (max-width:767px) {
+        font-size: map-get($fnsz,md);
+    }
+    @media (max-width:575px) {
+        font-size: map-get($fnsz,sm);
+    }
+    @media (max-width:302px) {
+        font-size: map-get($fnsz,xs);
+    }
+}
+
+@mixin video_resp {
+    @media (max-width:1200px) {
+        width: 1000px;
+        height: 500px;
+    }
+
+    @media (max-width:767px) {
+        width: 700px;
+        height: 350px;
+    }
+
+    @media (max-width:575px) {
+        width: 500px;
+        height: 250px;
+    }
+
+    @media (max-width:302px) {
+        width: 300px;
+        height: 150px;
+    }
+}
