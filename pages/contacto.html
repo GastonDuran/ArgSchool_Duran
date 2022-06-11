@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <title>Contacto</title>
 </head>
 
 <body>
-    <header class="header row container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -55,48 +56,72 @@
             </div>
         </nav>
         <h1 class="h1 p-1 align-self-baseline container col-auto w-100"> ARGENTINA SCHOOL </h1>
-        <p class="h3 p-1 lema container-fluid align-content-center justify-content-center col-auto w-100">"Hacia grandes metas por caminos innovadores"</p>
-        <img class="d-block p-1 col-xxl-12 col-lg-auto col md-auto w-80 h-80" id="portada"
-            src="../images/FB Portada.jpg" alt="Frente edilicio de jardín de infantes y de escuela primaria-secundaria">
         <p class="h3 p-1 lema container-fluid align-content-center col-auto w-100">Más de cuatro décadas brindando educación
             mixta, bilingüe y laica</p>
     </header>
-
-        <section class="main_contacto row container-fluid">
-            <h2 class="h2 p-1 col-12 text-center">Formulario de consultas y contacto</h2>
-            <form class="contacto" action="" method="post" enctype="application/x-www-form-urlencoded">
-                <input class="contacto__nombre" type="text" placeholder="Nombre y Apellido">
-                <input class="contacto__email" type="email" placeholder="Correo electrónico">
-                <input class="contacto__asunto" type="text" placeholder="Nivel de interés">
-                <textarea class="contacto__texto" name="consulta" id="consulta" cols="30" rows="10"
-                    placeholder="Ingrese aquí su consulta"></textarea>
-                <div class="contacto__enviar">
-                    <input class="btn btn-primary" type="submit" value="Enviar">
-                </div>
-            </form>
-        </section>
-        <footer class="footer">
-            <div class="row container-fluid socialIcons">
-                <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    title="Perfil en Facebook"><img class="socialIcons__item" src="../images/facebook.png"
-                        alt="Icono de Facebook"></div>
-                <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    title="Perfil en Instagram"><img class="socialIcons__item" src="../images/instagram.png"
-                        alt="Icono de Instagram"></div>
-                <div class="col-4 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    title="Volver a Inicio">
-                    <a href="../index.html"><img class="socialIcons__item"
-                            src="../images/home.png" alt="Icono de Inicio">
-                    </a>
-                </div>
-                <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    title="Enviar correo electrónico"><img class="socialIcons__item" src="../images/sobre.png"
-                        alt="Icono de correo electrónico"></div>
-                <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    title="Enviar mensaje de WhatsApp""><img class=" socialIcons__item" src="../images/whatsapp.png"
-                    alt="Icono de Whatsapp"></div>
+    <section class="main_contacto">
+        <h2 class="h2 p-1 col-12 text-center">Formulario de consultas y contacto</h2>
+        <form class="contacto" action="" method="post" enctype="application/x-www-form-urlencoded">
+            <input class="contacto__nombre" type="text" placeholder="Nombre y Apellido">
+            <input class="contacto__email" type="email" placeholder="Correo electrónico">
+            <input class="contacto__asunto" type="text" placeholder="Nivel de interés">
+            <textarea class="contacto__texto" name="consulta" id="consulta" cols="30" rows="10"
+                placeholder="Ingrese aquí su consulta"></textarea>
+            <div class="contacto__enviar">
+                <input class="btn btn-outline-light" type="submit" value="Enviar">
             </div>
-        </footer>
+        </form>
+    </section>
+    <section class="location row">
+        <div class="container col-xl-6 col-sm-12 contactBlock">
+            <h2>Nivel Inicial</h2>
+            <img class="container p-2 m-1 w-80" src="../images/frente-inicial.png" alt="Frente del edificio del jardín de infantes">
+        </div>
+        <div class="container col-xl-6 col-sm-12 contactBlock">
+            <iframe class="container p-2 m-1 w-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.16153694432!2d-58.46166478519628!3d-34.57477896347363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d92d812493%3A0x129d8cccc696f844!2sVirrey%20Avil%C3%A9s%203330%2C%20C1426EEJ%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sbr!4v1654979006476!5m2!1ses-419!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container col-12 contactBlock">
+            <span class="material-symbols-outlined">home_pin</span><p>Virrey Avilés 3330 (1426), C.A.B.A., Argentina</p>
+            <span class="material-symbols-outlined">call</span><p>+54 11 4552 0520</p>
+            <span class="material-symbols-outlined">mail</span><p>jardin@argentinaschool.edu.ar</p>
+        </div>
+    </section>
+    <section class="location row">
+        <div class="container col-xl-6 col-sm-12 contactBlock">
+            <h2>Nivel Primario y Secundario</h2>
+            <img class="container p-2 m-1 w-80" src="../images/frente-primaria-1.jpg" alt="Frente del edificio del jardín de infantes">
+        </div>
+        <div class="container col-xl-6 col-sm-12 contactBlock">
+            <iframe class="container p-2 m-1 w-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9390571368344!2d-58.457115585196!3d-34.58040856377125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e70f0239ff%3A0x16cf58a57ef38a89!2sGiribone%20863%2C%20C1427CAE%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sbr!4v1654981424229!5m2!1ses-419!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container col-12 contactBlock">
+            <span class="material-symbols-outlined">home_pin</span><p>Giribone 863 (1427), C.A.B.A., Argentina</p>
+            <span class="material-symbols-outlined">call</span><p>+54 11 4553 3904</pclass=>
+            <span class="material-symbols-outlined">mail</span><p>primaria@argentinaschool.edu.ar</p><p>secundaria@argentinaschool.edu.ar</p>
+        </div>
+    </section>      
+    <footer class="footer">
+        <div class="row socialIcons">
+            <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Perfil en Facebook"><img class="socialIcons__item" src="../images/facebook.png"
+                    alt="Icono de Facebook"></div>
+            <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Perfil en Instagram"><img class="socialIcons__item" src="../images/instagram.png"
+                    alt="Icono de Instagram"></div>
+            <div class="col-4 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Volver a Inicio">
+                <a href="../index.html"><img class="socialIcons__item"
+                        src="../images/home.png" alt="Icono de Inicio">
+                </a>
+            </div>
+            <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Enviar correo electrónico"><img class="socialIcons__item" src="../images/sobre.png"
+                    alt="Icono de correo electrónico"></div>
+            <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Enviar mensaje de WhatsApp""><img class=" socialIcons__item" src="../images/whatsapp.png"
+                alt="Icono de Whatsapp"></div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

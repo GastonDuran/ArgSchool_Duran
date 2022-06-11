@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #0D1B2A; }
+  background-color: #0D1B2A;
+  /* Estilos de la página institucional */ }
   body .header {
     background-image: radial-gradient(circle, #435368, #0D1B2A);
     font-family: "Red Rose", cursive;
@@ -19,7 +20,7 @@ body {
       animation: pulse;
       animation-delay: 0;
       animation-duration: 2s;
-      animation-iteration-count: 4; }
+      animation-iteration-count: 2; }
     body .header h1 {
       margin-top: 2%;
       border: dashed whitesmoke 2px;
@@ -32,7 +33,7 @@ body {
       animation: pulse;
       animation-delay: 1.5s;
       animation-duration: 2s;
-      animation-iteration-count: 3; }
+      animation-iteration-count: 2; }
     body .header #portada {
       width: 100%; }
       body .header #portada:hover {
@@ -45,11 +46,40 @@ body {
     background-image: radial-gradient(circle, #435368, #0D1B2A); }
     body .main_index .nivel_tar {
       background-image: radial-gradient(circle, #435368, #0D1B2A); }
+    body .main_index .fotoNivel__item {
+      flex-wrap: wrap;
+      border-style: dashed;
+      border-radius: 5%;
+      object-fit: cover;
+      border-color: #778DA9; }
+      body .main_index .fotoNivel__item:hover {
+        cursor: pointer;
+        animation: pulse;
+        animation-delay: 0;
+        animation-duration: 2s;
+        animation-iteration-count: 1; }
+    body .main_index h4 {
+      font-family: "Red Rose", cursive;
+      color: #E0E1DD;
+      padding: 2%;
+      margin-bottom: 5%;
+      border-radius: 5%;
+      animation: pulse;
+      animation-delay: 1.5s;
+      animation-duration: 1s;
+      animation-iteration-count: 1; }
+    body .main_index .nivelText__click {
+      font-family: "Josefin Sans", sans-serif;
+      color: #E0E1DD;
+      animation: pulse;
+      animation-delay: 0;
+      animation-duration: 2s;
+      animation-iteration-count: infinite; }
   body .iconoNivel {
     background-color: black;
     color: whitesmoke;
     padding: 2%;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
     justify-content: space-evenly;
@@ -81,42 +111,14 @@ body {
       text-rendering: optimizeLegibility;
       -moz-osx-font-smoothing: grayscale;
       font-feature-settings: 'liga'; }
-  body .fotoNivel .fotoNivel__item {
-    flex-wrap: wrap;
-    border-style: dashed;
-    border-radius: 5%;
-    object-fit: cover;
-    border-color: #778DA9; }
-    body .fotoNivel .fotoNivel__item:hover {
-      cursor: pointer;
-      animation: pulse;
-      animation-delay: 0;
-      animation-duration: 2s;
-      animation-iteration-count: 1; }
-  body .fotoNivel h4 {
-    font-family: "Red Rose", cursive;
-    color: #E0E1DD;
-    padding: 2%;
-    margin-bottom: 5%;
-    border-radius: 5%;
-    animation: pulse;
-    animation-delay: 1.5s;
-    animation-duration: 1s;
-    animation-iteration-count: 1; }
-  body .fotoNivel .nivelText__click {
-    font-family: "Josefin Sans", sans-serif;
-    color: #E0E1DD;
-    animation: pulse;
-    animation-delay: 0;
-    animation-duration: 2s;
-    animation-iteration-count: infinite; }
   body .nivelText {
     display: block;
     width: 100%;
-    margin-bottom: 4%;
-    background-color: #778DA9;
+    margin-top: 0;
+    margin-bottom: 5%;
+    background-color: #0D1B2A;
     object-fit: cover; }
-    body .nivelText p, body .nivelText .main_institucional .institucional_text1, .main_institucional body .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, .main_institucional body .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, .main_institucional body .nivelText .enlace_medios {
+    body .nivelText p, body .nivelText .main_institucional .institucional_text1, body .main_institucional .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, body .main_institucional .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, body .main_institucional .nivelText .enlace_medios {
       font-family: "Red Rose", cursive;
       color: #E0E1DD;
       font-size: x-large;
@@ -125,21 +127,22 @@ body {
       animation: pulse;
       animation-delay: 1s;
       animation-duration: 2s;
-      animation-iteration-count: infinite; }
+      animation-iteration-count: 2; }
       @media (max-width: 767px) {
-        body .nivelText p, body .nivelText .main_institucional .institucional_text1, .main_institucional body .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, .main_institucional body .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, .main_institucional body .nivelText .enlace_medios {
+        body .nivelText p, body .nivelText .main_institucional .institucional_text1, body .main_institucional .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, body .main_institucional .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, body .main_institucional .nivelText .enlace_medios {
           font-size: medium; } }
       @media (max-width: 575px) {
-        body .nivelText p, body .nivelText .main_institucional .institucional_text1, .main_institucional body .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, .main_institucional body .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, .main_institucional body .nivelText .enlace_medios {
+        body .nivelText p, body .nivelText .main_institucional .institucional_text1, body .main_institucional .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, body .main_institucional .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, body .main_institucional .nivelText .enlace_medios {
           font-size: small; } }
       @media (max-width: 302px) {
-        body .nivelText p, body .nivelText .main_institucional .institucional_text1, .main_institucional body .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, .main_institucional body .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, .main_institucional body .nivelText .enlace_medios {
+        body .nivelText p, body .nivelText .main_institucional .institucional_text1, body .main_institucional .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, body .main_institucional .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, body .main_institucional .nivelText .enlace_medios {
           font-size: x-small; } }
   body .fotoArte {
+    margin-top: 5%;
     object-fit: cover;
     animation: pulse;
     animation-delay: 1s;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1; }
     body .fotoArte .fotoArte__item {
       flex-wrap: wrap;
@@ -150,7 +153,7 @@ body {
         cursor: grab;
         animation: pulse;
         animation-delay: 0;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-iteration-count: 1; }
     body .fotoArte .fotoArte__text {
       font-family: "Red Rose", cursive;
@@ -174,7 +177,6 @@ body {
         animation-duration: 2s;
         animation-iteration-count: 1; }
   body .fotoCiencia {
-    display: flex;
     margin-bottom: 5%;
     object-fit: cover;
     animation: pulse;
@@ -283,246 +285,255 @@ body {
       animation-delay: 0;
       animation-duration: 2s;
       animation-iteration-count: infinite; }
-
-/* Estilos para formulario de contacto */
-.main_contacto h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: xx-large;
-  color: #E0E1DD;
-  margin-top: 1rem;
-  margin-bottom: 5%;
-  animation: pulse;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: 4; }
-
-.main_contacto .contacto {
-  height: 70vh;
-  max-width: 80%;
-  padding: 2%;
-  margin-left: 8%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat 4, 25%;
-  gap: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: x-small;
-  justify-content: stretch;
-  object-fit: contain;
-  color: whitesmoke;
-  background-color: #0D1B2A;
-  border-radius: 5%;
-  width: 100%;
-  height: 100%; }
-  @media only screen and (min-width: 600px) {
-    .main_contacto .contacto {
-      font-size: medium; } }
-  @media only screen and (min-width: 992px) {
-    .main_contacto .contacto {
-      font-size: x-large; } }
-  .main_contacto .contacto .contacto__nombre {
-    grid-column: auto;
-    grid-row: 1; }
-  .main_contacto .contacto .contacto__email {
-    grid-column: auto;
-    grid-row: 2; }
-  .main_contacto .contacto .contacto__texto {
-    grid-column: 2/5;
-    grid-row: 1/5; }
-  .main_contacto .contacto .contacto__asunto {
-    grid-column: auto;
-    grid-row: 3; }
-  .main_contacto .contacto .contacto__enviar {
+  body .main_contacto h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: xx-large;
+    color: #E0E1DD;
+    margin-top: 1rem;
+    margin-bottom: 5%;
+    animation: pulse;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: 2; }
+  body .main_contacto .contacto {
+    height: 70vh;
+    max-width: 80%;
+    padding: 2%;
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat 4, 25%;
+    gap: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: x-small;
+    justify-content: stretch;
+    object-fit: contain;
+    color: whitesmoke;
+    background-color: #0D1B2A;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%; }
+    @media only screen and (min-width: 600px) {
+      body .main_contacto .contacto {
+        font-size: medium; } }
+    @media only screen and (min-width: 992px) {
+      body .main_contacto .contacto {
+        font-size: x-large; } }
+    body .main_contacto .contacto .contacto__nombre {
+      grid-column: auto;
+      grid-row: 1; }
+    body .main_contacto .contacto .contacto__email {
+      grid-column: auto;
+      grid-row: 2; }
+    body .main_contacto .contacto .contacto__texto {
+      grid-column: 2/5;
+      grid-row: 1/5; }
+    body .main_contacto .contacto .contacto__asunto {
+      grid-column: auto;
+      grid-row: 3; }
+    body .main_contacto .contacto .contacto__enviar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+    body .main_contacto .contacto .contacto__enviar-boton {
+      width: 60%;
+      height: 60%;
+      grid-column: auto;
+      grid-row: 4;
+      background-color: #778DA9;
+      border-color: whitesmoke;
+      color: #060c12;
+      cursor: pointer; }
+  body .location {
+    flex-wrap: wrap;
+    border-style: dashed;
+    border-radius: 5%;
+    object-fit: cover; }
+    body .location .contactBlock h2 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: xx-large;
+      color: #E0E1DD;
+      margin-top: 1rem;
+      margin-bottom: 5%; }
+    body .location .contactBlock span {
+      color: whitesmoke;
+      height: 48px; }
+    body .location .contactBlock p, body .location .contactBlock .main_institucional .institucional_text1, body .main_institucional .location .contactBlock .institucional_text1, body .location .contactBlock .main_institucional .institucional_text2, body .main_institucional .location .contactBlock .institucional_text2, body .location .contactBlock .main_institucional .enlace_medios, body .main_institucional .location .contactBlock .enlace_medios {
+      font-family: "Josefin Sans", sans-serif;
+      color: #E0E1DD;
+      font-size: medium;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+      @media (max-width: 575px) {
+        body .location .contactBlock p, body .location .contactBlock .main_institucional .institucional_text1, body .main_institucional .location .contactBlock .institucional_text1, body .location .contactBlock .main_institucional .institucional_text2, body .main_institucional .location .contactBlock .institucional_text2, body .location .contactBlock .main_institucional .enlace_medios, body .main_institucional .location .contactBlock .enlace_medios {
+          font-size: small; } }
+      @media (max-width: 302px) {
+        body .location .contactBlock p, body .location .contactBlock .main_institucional .institucional_text1, body .main_institucional .location .contactBlock .institucional_text1, body .location .contactBlock .main_institucional .institucional_text2, body .main_institucional .location .contactBlock .institucional_text2, body .location .contactBlock .main_institucional .enlace_medios, body .main_institucional .location .contactBlock .enlace_medios {
+          font-size: x-small; } }
+  body .main_institucional h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: xx-large;
+    color: #E0E1DD;
+    margin-top: 1rem;
+    margin-bottom: 5%; }
+  body .main_institucional p, body .main_institucional .institucional_text1, body .main_institucional .institucional_text2, body .main_institucional .enlace_medios {
+    font-family: "Red Rose", cursive;
+    color: #E0E1DD;
+    font-size: x-large;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    @media (max-width: 767px) {
+      body .main_institucional p, body .main_institucional .institucional_text1, body .main_institucional .institucional_text2, body .main_institucional .enlace_medios {
+        font-size: medium; } }
+    @media (max-width: 575px) {
+      body .main_institucional p, body .main_institucional .institucional_text1, body .main_institucional .institucional_text2, body .main_institucional .enlace_medios {
+        font-size: small; } }
+    @media (max-width: 302px) {
+      body .main_institucional p, body .main_institucional .institucional_text1, body .main_institucional .institucional_text2, body .main_institucional .enlace_medios {
+        font-size: x-small; } }
+  body .main_institucional .institucional_video {
+    flex-wrap: wrap;
+    border-style: dashed;
+    border-radius: 5%;
+    object-fit: cover; }
+    @media (max-width: 1200px) {
+      body .main_institucional .institucional_video {
+        width: 1000px;
+        height: 500px; } }
+    @media (max-width: 1024px) {
+      body .main_institucional .institucional_video {
+        width: 800px;
+        height: 400px; } }
+    @media (max-width: 801px) {
+      body .main_institucional .institucional_video {
+        width: 600px;
+        height: 300px; } }
+    @media (max-width: 601px) {
+      body .main_institucional .institucional_video {
+        width: 400px;
+        height: 200px; } }
+    @media (max-width: 401px) {
+      body .main_institucional .institucional_video {
+        width: 250px;
+        height: 125px; } }
+    @media (max-width: 251px) {
+      body .main_institucional .institucional_video {
+        width: 125px;
+        height: 65px; } }
+  body .main_institucional .enlace_medios {
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
-  .main_contacto .contacto .contacto__enviar-boton {
-    width: 60%;
-    height: 60%;
-    grid-column: auto;
-    grid-row: 4;
-    background-color: #778DA9;
-    border-color: whitesmoke;
-    color: #060c12;
-    cursor: pointer; }
-
-/* Estilos de la página institucional */
-.main_institucional h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: xx-large;
-  color: #E0E1DD;
-  margin-top: 1rem;
-  margin-bottom: 5%; }
-
-.main_institucional p, .main_institucional .institucional_text1, .main_institucional .institucional_text2, .main_institucional .enlace_medios {
-  font-family: "Red Rose", cursive;
-  color: #E0E1DD;
-  font-size: x-large;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-  @media (max-width: 767px) {
-    .main_institucional p, .main_institucional .institucional_text1, .main_institucional .institucional_text2, .main_institucional .enlace_medios {
-      font-size: medium; } }
-  @media (max-width: 575px) {
-    .main_institucional p, .main_institucional .institucional_text1, .main_institucional .institucional_text2, .main_institucional .enlace_medios {
-      font-size: small; } }
-  @media (max-width: 302px) {
-    .main_institucional p, .main_institucional .institucional_text1, .main_institucional .institucional_text2, .main_institucional .enlace_medios {
-      font-size: x-small; } }
-
-.main_institucional .institucional_video {
-  flex-wrap: wrap;
-  border-style: dashed;
-  border-radius: 5%;
-  object-fit: cover; }
-  @media (max-width: 1200px) {
-    .main_institucional .institucional_video {
-      width: 1000px;
-      height: 500px; } }
-  @media (max-width: 1024px) {
-    .main_institucional .institucional_video {
-      width: 800px;
-      height: 400px; } }
-  @media (max-width: 801px) {
-    .main_institucional .institucional_video {
-      width: 600px;
-      height: 300px; } }
-  @media (max-width: 601px) {
-    .main_institucional .institucional_video {
-      width: 400px;
-      height: 200px; } }
-  @media (max-width: 401px) {
-    .main_institucional .institucional_video {
-      width: 250px;
-      height: 125px; } }
-  @media (max-width: 251px) {
-    .main_institucional .institucional_video {
-      width: 125px;
-      height: 65px; } }
-
-.main_institucional .enlace_medios {
-  display: flex;
-  justify-content: center; }
-
-.main_inicial h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: xx-large;
-  color: #E0E1DD;
-  margin-top: 1rem;
-  margin-bottom: 5%;
-  animation: pulse;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: 4; }
-
-.main_inicial .inicial_text1 {
-  font-family: "Red Rose", cursive;
-  color: #E0E1DD;
-  font-size: x-large;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-  @media (max-width: 767px) {
-    .main_inicial .inicial_text1 {
-      font-size: medium; } }
-  @media (max-width: 575px) {
-    .main_inicial .inicial_text1 {
-      font-size: small; } }
-  @media (max-width: 302px) {
-    .main_inicial .inicial_text1 {
-      font-size: x-small; } }
-
-.main_inicial .propositos, .main_inicial .talleres {
-  line-height: 1.5rem;
-  list-style: square; }
-  .main_inicial .propositos .inicial_text1, .main_inicial .talleres .inicial_text1 {
-    text-align: left; }
-    @media only screen and (min-width: 600px) {
-      .main_inicial .propositos .inicial_text1, .main_inicial .talleres .inicial_text1 {
-        font-size: medium;
-        line-height: 2.5rem; } }
-    @media only screen and (min-width: 992px) {
-      .main_inicial .propositos .inicial_text1, .main_inicial .talleres .inicial_text1 {
-        font-size: x-large;
-        line-height: 3.5rem; } }
-
-.main_primaria h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: xx-large;
-  color: #E0E1DD;
-  margin-top: 1rem;
-  margin-bottom: 5%;
-  animation: pulse;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: 4; }
-
-.main_primaria .primaria_text1 {
-  font-family: "Red Rose", cursive;
-  color: #E0E1DD;
-  font-size: x-large;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-  @media (max-width: 767px) {
-    .main_primaria .primaria_text1 {
-      font-size: medium; } }
-  @media (max-width: 575px) {
-    .main_primaria .primaria_text1 {
-      font-size: small; } }
-  @media (max-width: 302px) {
-    .main_primaria .primaria_text1 {
-      font-size: x-small; } }
-
-.main_primaria .propositos, .main_primaria .talleres {
-  line-height: 1.5rem;
-  list-style: square; }
-  .main_primaria .propositos .primaria_text1, .main_primaria .talleres .primaria_text1 {
-    text-align: left; }
-    @media only screen and (min-width: 600px) {
-      .main_primaria .propositos .primaria_text1, .main_primaria .talleres .primaria_text1 {
-        font-size: medium;
-        line-height: 2.5rem; } }
-    @media only screen and (min-width: 992px) {
-      .main_primaria .propositos .primaria_text1, .main_primaria .talleres .primaria_text1 {
-        font-size: x-large;
-        line-height: 3.5rem; } }
-
-.main_secu h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: xx-large;
-  color: #E0E1DD;
-  margin-top: 1rem;
-  margin-bottom: 5%;
-  animation: pulse;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: 4; }
-
-.main_secu .secu_text1 {
-  font-family: "Red Rose", cursive;
-  color: #E0E1DD;
-  font-size: x-large;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-  @media (max-width: 767px) {
-    .main_secu .secu_text1 {
-      font-size: medium; } }
-  @media (max-width: 575px) {
-    .main_secu .secu_text1 {
-      font-size: small; } }
-  @media (max-width: 302px) {
-    .main_secu .secu_text1 {
-      font-size: x-small; } }
-
-.main_secu .propositos, .main_secu .talleres {
-  line-height: 1.5rem;
-  list-style: square; }
-  .main_secu .propositos .secu_text1, .main_secu .talleres .secu_text1 {
-    text-align: left; }
-    @media only screen and (min-width: 600px) {
-      .main_secu .propositos .secu_text1, .main_secu .talleres .secu_text1 {
-        font-size: medium;
-        line-height: 2.5rem; } }
-    @media only screen and (min-width: 992px) {
-      .main_secu .propositos .secu_text1, .main_secu .talleres .secu_text1 {
-        font-size: x-large;
-        line-height: 3.5rem; } }
+    justify-content: center; }
+  body .main_inicial h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: xx-large;
+    color: #E0E1DD;
+    margin-top: 1rem;
+    margin-bottom: 5%;
+    animation: pulse;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: 2; }
+  body .main_inicial .inicial_text1 {
+    font-family: "Red Rose", cursive;
+    color: #E0E1DD;
+    font-size: x-large;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    @media (max-width: 767px) {
+      body .main_inicial .inicial_text1 {
+        font-size: medium; } }
+    @media (max-width: 575px) {
+      body .main_inicial .inicial_text1 {
+        font-size: small; } }
+    @media (max-width: 302px) {
+      body .main_inicial .inicial_text1 {
+        font-size: x-small; } }
+  body .main_inicial .propositos, body .main_inicial .talleres {
+    line-height: 1.5rem;
+    list-style: square; }
+    body .main_inicial .propositos .inicial_text1, body .main_inicial .talleres .inicial_text1 {
+      text-align: left; }
+      @media only screen and (min-width: 600px) {
+        body .main_inicial .propositos .inicial_text1, body .main_inicial .talleres .inicial_text1 {
+          font-size: medium;
+          line-height: 2.5rem; } }
+      @media only screen and (min-width: 992px) {
+        body .main_inicial .propositos .inicial_text1, body .main_inicial .talleres .inicial_text1 {
+          font-size: x-large;
+          line-height: 3.5rem; } }
+  body .main_primaria h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: xx-large;
+    color: #E0E1DD;
+    margin-top: 1rem;
+    margin-bottom: 5%;
+    animation: pulse;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: 2; }
+  body .main_primaria .primaria_text1 {
+    font-family: "Red Rose", cursive;
+    color: #E0E1DD;
+    font-size: x-large;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    @media (max-width: 767px) {
+      body .main_primaria .primaria_text1 {
+        font-size: medium; } }
+    @media (max-width: 575px) {
+      body .main_primaria .primaria_text1 {
+        font-size: small; } }
+    @media (max-width: 302px) {
+      body .main_primaria .primaria_text1 {
+        font-size: x-small; } }
+  body .main_primaria .propositos, body .main_primaria .talleres {
+    line-height: 1.5rem;
+    list-style: square; }
+    body .main_primaria .propositos .primaria_text1, body .main_primaria .talleres .primaria_text1 {
+      text-align: left; }
+      @media only screen and (min-width: 600px) {
+        body .main_primaria .propositos .primaria_text1, body .main_primaria .talleres .primaria_text1 {
+          font-size: medium;
+          line-height: 2.5rem; } }
+      @media only screen and (min-width: 992px) {
+        body .main_primaria .propositos .primaria_text1, body .main_primaria .talleres .primaria_text1 {
+          font-size: x-large;
+          line-height: 3.5rem; } }
+  body .main_secu h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: xx-large;
+    color: #E0E1DD;
+    margin-top: 1rem;
+    margin-bottom: 5%;
+    animation: pulse;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: 2; }
+  body .main_secu .secu_text1 {
+    font-family: "Red Rose", cursive;
+    color: #E0E1DD;
+    font-size: x-large;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    @media (max-width: 767px) {
+      body .main_secu .secu_text1 {
+        font-size: medium; } }
+    @media (max-width: 575px) {
+      body .main_secu .secu_text1 {
+        font-size: small; } }
+    @media (max-width: 302px) {
+      body .main_secu .secu_text1 {
+        font-size: x-small; } }
+  body .main_secu .propositos, body .main_secu .talleres {
+    line-height: 1.5rem;
+    list-style: square; }
+    body .main_secu .propositos .secu_text1, body .main_secu .talleres .secu_text1 {
+      text-align: left; }
+      @media only screen and (min-width: 600px) {
+        body .main_secu .propositos .secu_text1, body .main_secu .talleres .secu_text1 {
+          font-size: medium;
+          line-height: 2.5rem; } }
+      @media only screen and (min-width: 992px) {
+        body .main_secu .propositos .secu_text1, body .main_secu .talleres .secu_text1 {
+          font-size: x-large;
+          line-height: 3.5rem; } }

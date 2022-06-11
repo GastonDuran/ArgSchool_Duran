@@ -39,6 +39,21 @@
     }
 }
 
+@mixin sub_text {
+    font-family: $fuente_2;
+    color: $color_tipografia2;
+    font-size: map-get($fnsz, md);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @media (max-width:575px) {
+        font-size: map-get($fnsz,sm);
+    }
+    @media (max-width:302px) {
+        font-size: map-get($fnsz,xs);
+    }
+}
+
 @mixin video_resp {
     @media (max-width:1200px) {
         width: 1000px;

@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <header class="header row container-fluid w-100">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid w-100">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -65,14 +65,14 @@
             mixta, bilingüe y laica</p>
     </header>
 
-    <section class="main_index row container-fluid w-100 fotoNivel">
+    <section class="main_index row">
         <div class="nivel_tar card col-xl-4 col-md-12">
             <img class="card-image-top fotoNivel__item" src="./images/Jardin2.jpg"
                 alt="Patio de juegos del jardín de infantes">
             <div class="card-body">
                 <h4 class="card-title">Nivel Inicial</h4>
                 <p class="card-text"></p>
-                <a href="./pages/inicial.html" class="btn btn-primary nivelText__click">Conocer más</a>
+                <a href="./pages/inicial.html" class="btn btn-outline-dark nivelText__click">Conocer más</a>
             </div>
         </div>
         <div class="nivel_tar card col-xl-4 col-md-12">
@@ -80,7 +80,7 @@
             <div class="card-body">
                 <h4 class="card-title">Nivel Primario</h4>
                 <p class="card-text"></p>
-                <a href="./pages/primaria.html" class="btn btn-primary nivelText__click">Conocer más</a>
+                <a href="./pages/primaria.html" class="btn btn-outline-dark nivelText__click">Conocer más</a>
             </div>
         </div>
         <div class="nivel_tar card col-xl-4 col-md-12">
@@ -88,12 +88,14 @@
             <div class="card-body">
                 <h4 class="card-title">Nivel Secundario</h4>
                 <p class="card-text"></p>
-                <a href="./pages/secundaria.html" class="btn btn-primary nivelText__click">Conocer más</a>
+                <a href="./pages/secundaria.html" class="btn btn-outline-dark nivelText__click">Conocer más</a>
             </div>
         </div>
     </section>
-
-    <div class="row container-fluid iconoNivel">
+    <div class="container nivelText">
+        <p class="nivelText__click">Haga click sobre el ícono para acceder a la información detallada de cada nivel</p>
+    </div>
+    <div class="row iconoNivel">
         <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top"
             title="Requisitos de ingreso a Inicial">child_care</span>
         <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -108,36 +110,32 @@
             title="Calendario escolar Nivel Secundario">event</span>
     </div>
 
-    <div class="row container-fluid nivelText">
-        <p class="col-auto nivelText__click">Haga click sobre el ícono para acceder a la información detallada de cada nivel</p>
-    </div>
-
-    <section class="row container-fluid fotoArte w-100">
-        <div class="col-xl-4 col-sm-12 justify-content-center align-content-center fotoArte__text">
+    <section class="row fotoArte">
+        <div class="container col-xl-4 col-md-12 col-sm-12">
             <p class="h3 fotoArte__text">Nos proponemos el desarrollo individual y social a través del estímulo creativo y artístico</p>
         </div>
-        <div class="col-xl-4 col-sm-12 justify-content-center align-content-center"><img
+        <div class="container col-xl-4 col-md-6 col-sm-12"><img
             class="w-100 fotoArte__item" src="./images/PrimaArte.jpg"
                 alt="Estudiantes de primaria en clase de arte"></div>
-        <div class="col-xl-4 col-sm-12 justify-content-center align-content-center"><img
+        <div class="container col-xl-4 col-md-6 col-sm-12"><img
             class="w-100 fotoArte__item" src="./images/SecuArte2.jpg"
                 alt="Obra de arte plástico por goteo pendular"></div>
     </section>
 
-    <section class="row container-fluid fotoCiencia w-100">
-        <div class="container-fluid col-xl-4 col-sm-12 justify-content-center align-content-center"><img
+    <section class="row fotoCiencia">
+        <div class="container col-xl-4 col-md-6 col-sm-12"><img
                 class="w-100 fotoCiencia__item" src="./images/PrimaCiencia.jpg"
                 alt="Estudiante de primaria en clase de ciencia"></div>
-        <div class="container-fluid col-xl-4 col-sm-12 justify-content-center align-content-center"><img
+        <div class="container col-xl-4 col-md-6 col-sm-12"><img
                 class="w-100 fotoCiencia__item" src="./images/Secu-ciencia.jpg"
                 alt="Estudiantes observando experimentos"></div>
-        <div class="container-fluid col-xl-4 col-sm-12 justify-content-center align-content-center fotoCiencia__text">
+        <div class="container col-xl-4 col-md-12 col-sm-12">
             <p class="h3 fotoCiencia__text">Nos lanzamos a la aventura del descubrimiento a través del estímulo de la curiosidad humana innata</p>
         </div>
     </section>
 
-    <section class="row container-fluid videoAmbiental">
-        <div class="container-fluid w-100 h-100 col-12"> 
+    <section class="row videoAmbiental">
+        <div class="container-fluid col-12"> 
             <iframe class="container videoAmbiental__iframe" width="560" height="315" src="https://www.youtube.com/embed/ZJjks48czVw?start=60" title="YouTube video player" frameborder=5"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen"></iframe>
@@ -151,7 +149,7 @@
     </section>
 
     <footer class="footer">
-        <div class="row container-fluid w-100 socialIcons">
+        <div class="row w-100 socialIcons">
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
                 title="Perfil en Facebook"><img class="socialIcons__item" src="./images/facebook.png" alt="Icono de Facebook"></div>
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
