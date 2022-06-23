@@ -21,11 +21,11 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid w-100">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="list-group-item nav-link topnavbar__item1" aria-current="true"
@@ -70,7 +70,7 @@
             <img class="card-image-top fotoNivel__item" src="./images/Jardin2.jpg"
                 alt="Patio de juegos del jardín de infantes">
             <div class="card-body">
-                <h4 class="card-title">Nivel Inicial</h4>
+                <h2 class="card-title">Nivel Inicial</h2>
                 <p class="card-text"></p>
                 <a href="./pages/inicial.html" class="btn btn-outline-dark nivelText__click">Conocer más</a>
             </div>
@@ -78,7 +78,7 @@
         <div class="nivel_tar card col-xl-4 col-md-12">
             <img class="card-image-top fotoNivel__item" src="./images/Prima2.jpg" alt="Patio de recreo de Primaria">
             <div class="card-body">
-                <h4 class="card-title">Nivel Primario</h4>
+                <h2 class="card-title">Nivel Primario</h2>
                 <p class="card-text"></p>
                 <a href="./pages/primaria.html" class="btn btn-outline-dark nivelText__click">Conocer más</a>
             </div>
@@ -86,28 +86,27 @@
         <div class="nivel_tar card col-xl-4 col-md-12">
             <img class="card-image-top fotoNivel__item" src="./images/Hockey1.jpg" alt="Secundaria en campo de hockey">
             <div class="card-body">
-                <h4 class="card-title">Nivel Secundario</h4>
+                <h2 class="card-title">Nivel Secundario</h2>
                 <p class="card-text"></p>
                 <a href="./pages/secundaria.html" class="btn btn-outline-dark nivelText__click">Conocer más</a>
             </div>
         </div>
     </section>
     <div class="container nivelText">
-        <p class="nivelText__click">Haga click sobre el ícono para acceder a la información detallada de cada nivel</p>
+        <p class="nivelText__click">Haga click sobre el ícono para acceder a la documentación de cada nivel</p>
     </div>
     <div class="row iconoNivel">
-        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Requisitos de ingreso a Inicial">child_care</span>
-        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Calendario escolar Nivel Inicial">calendar_month</span>
-        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Requisitos de ingreso a Primaria">escalator_warning</span>
-        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Calendario escolar Nivel Primario">event_available</span>
-        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Requisitos de ingreso a Secundaria">school</span>
-        <span class="col-2 material-icons" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Calendario escolar Nivel Secundario">event</span>
+        <a class="col-2" href="https://drive.google.com/drive/folders/18L3APSdUREOa4h0mTdx2k8Wpk_DxVRFh?usp=sharing"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Requisitos de ingreso a Inicial">child_care</span>
+        </a>
+        <a class="col-2" href="./files/agenda_educativa_2022_0.pdf"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Calendario escolar Nivel Inicial">calendar_month</span>
+        </a>
+        <a class="col-2" href="https://drive.google.com/drive/folders/19pwwbhVqVPwvHV1S4Qpff3xKnfN7A8wP?usp=sharing"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Requisitos de ingreso a Primaria">escalator_warning</span>
+        </a>
+        <a class="col-2" href="./files/agenda_educativa_2022_0.pdf"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Calendario escolar Nivel Primario">event_available</span>
+        </a>
+        <a class="col-2" href="https://drive.google.com/drive/folders/1pnjxqeYyVOJLuQvpEPNecQuXuMgFG9X6?usp=sharing"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Requisitos de ingreso a Secundaria">school</span></a>
+        <a class="col-2" href="./files/agenda_educativa_2022_0.pdf"><span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Calendario escolar Nivel Secundario">event</span>
+        </a>
     </div>
 
     <section class="row fotoArte">
@@ -149,18 +148,20 @@
     </section>
 
     <footer class="footer">
-        <div class="row w-100 socialIcons">
+        <div class="row socialIcons">
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Perfil en Facebook"><img class="socialIcons__item" src="./images/facebook.png" alt="Icono de Facebook"></div>
+                title="Perfil en Facebook"><a href="https://www.facebook.com/argentinaschool"><img class="socialIcons__item" src="../images/facebook.png" alt="Icono de Facebook"></a></div>
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Perfil en Instagram"><img class="socialIcons__item" src="./images/instagram.png" alt="Icono de Instagram"></div>
+                title="Perfil en Instagram"><a href="https://www.instagram.com/argentinaschool/"><img class="socialIcons__item" src="../images/instagram.png" alt="Icono de Instagram"></a></div>
             <div class="col-4 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Volver a Inicio"><a href="./index.html"><img class="socialIcons__item"
-                src="./images/home.png" alt="Volver al Inicio"></a></div>
+                title="Volver arriba">
+                <a href="#top"><img class="socialIcons__item" src="../images/home.png" alt="Icono de Inicio"></a>
+            </div>
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Enviar correo electrónico"><img class="socialIcons__item" src="./images/sobre.png" alt="Icono de correo electrónico"></div>
+                title="Enviar correo electrónico"><a href="mailto:colegio@argentinaschool.edu.ar"><img class="socialIcons__item" src="../images/email.png"
+                    alt="Icono de correo electrónico"></a></div>
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Enviar mensaje de WhatsApp""><img class=" socialIcons__item" src="./images/whatsapp.png" alt="Icono de Whatsapp"></div>
+                title="Perfil de Twitter""><a href="https://twitter.com/"><img class=" socialIcons__item" src="../images/twitter.png" alt="Icono de Twitter"></a></div>
         </div>
     </footer>
 

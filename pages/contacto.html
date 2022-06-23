@@ -22,14 +22,18 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="list-group-item nav-link topnavbar__item1" aria-current="true"
+                            <a class="list-group-item nav-link topnavbar__item2" aria-current="true"
+                            href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="list-group-item nav-link topnavbar__item1"
                                 href="../pages/institucional.html">Institucional</a>
                         </li>
                         <li class="nav-item">
@@ -43,9 +47,6 @@
                             <a class="list-group-item nav-link topnavbar__item2" href="../pages/secundaria.html">Nivel
                                 Secundario</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="list-group-item nav-link topnavbar__item1"
-                                href="../pages/contacto.html">Contacto</a></li>
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2 topnavbar__item2" type="search"
@@ -62,11 +63,17 @@
     <section class="main_contacto">
         <h2 class="h2 p-1 col-12 text-center">Formulario de consultas y contacto</h2>
         <form class="contacto" action="" method="post" enctype="application/x-www-form-urlencoded">
-            <input class="contacto__nombre" type="text" placeholder="Nombre y Apellido">
-            <input class="contacto__email" type="email" placeholder="Correo electrónico">
-            <input class="contacto__asunto" type="text" placeholder="Nivel de interés">
+            <input class="contacto__nombre" type="text" placeholder="Nombre y Apellido" required autofocus>
+            <input class="contacto__email" type="email" placeholder="Correo electrónico" required>
+            <label for="nivel">Nivel de interés
+                <select name="nivel" id="nivel">
+                    <option value="inicial">Inicial</option>
+                    <option value="primaria">Primario</option>
+                    <option value="secundaria">Secundario</option>
+                </select>
+            </label>
             <textarea class="contacto__texto" name="consulta" id="consulta" cols="30" rows="10"
-                placeholder="Ingrese aquí su consulta"></textarea>
+                placeholder="Ingrese aquí su consulta" required></textarea>
             <div class="contacto__enviar">
                 <input class="btn btn-outline-light" type="submit" value="Enviar">
             </div>
@@ -103,23 +110,18 @@
     <footer class="footer">
         <div class="row socialIcons">
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Perfil en Facebook"><img class="socialIcons__item" src="../images/facebook.png"
-                    alt="Icono de Facebook"></div>
+                title="Perfil en Facebook"><a href="https://www.facebook.com/argentinaschool"><img class="socialIcons__item" src="../images/facebook.png" alt="Icono de Facebook"></a></div>
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Perfil en Instagram"><img class="socialIcons__item" src="../images/instagram.png"
-                    alt="Icono de Instagram"></div>
+                title="Perfil en Instagram"><a href="https://www.instagram.com/argentinaschool/"><img class="socialIcons__item" src="../images/instagram.png" alt="Icono de Instagram"></a></div>
             <div class="col-4 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Volver a Inicio">
-                <a href="../index.html"><img class="socialIcons__item"
-                        src="../images/home.png" alt="Icono de Inicio">
-                </a>
+                title="Volver arriba">
+                <a href="#top"><img class="socialIcons__item" src="../images/home.png" alt="Icono de Inicio"></a>
             </div>
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Enviar correo electrónico"><img class="socialIcons__item" src="../images/sobre.png"
-                    alt="Icono de correo electrónico"></div>
+                title="Enviar correo electrónico"><a href="mailto:colegio@argentinaschool.edu.ar"><img class="socialIcons__item" src="../images/email.png"
+                    alt="Icono de correo electrónico"></a></div>
             <div class="col-2 container-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Enviar mensaje de WhatsApp""><img class=" socialIcons__item" src="../images/whatsapp.png"
-                alt="Icono de Whatsapp"></div>
+                title="Perfil de Twitter""><a href="https://twitter.com/"><img class=" socialIcons__item" src="../images/twitter.png" alt="Icono de Twitter"></a></div>
         </div>
     </footer>
 

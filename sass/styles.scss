@@ -23,19 +23,12 @@ body {
         .topnavbar__item2 {
             font-family: $fuente_2;
             background-image: $fondo_gradiente;
-            @include animation (0, 2s, 2);
         }
 
         h1 {
             margin-top: 2%;
             border: $borde_punteado $color_tipografia1 2px;
             background-image: $fondo_gradiente;
-
-            @include animation(1s, 1s, 2)
-        }
-
-        .lema {
-            @include animation (1.5s, 2s, 2)
         }
 
         #portada {
@@ -43,7 +36,6 @@ body {
 
             &:hover {
                 cursor: pointer;
-                @include animation (0, 1s, 1)
             }
         }
     }
@@ -59,23 +51,20 @@ body {
                 border-color: $color_borde_fondo;
                 &:hover {
                     cursor: pointer;
-                    @include animation (0, 2s, 1)
                 }
             }
     
-            h4 {
+            h2 {
                 font-family: $fuente_1;
                 color: $color_tipografia2;
                 padding: $padding;
                 margin-bottom: $margen_inferior;
                 border-radius: $borde_redondo;
-                @include animation (1.5s, 1s, 1);
             }
     
             .nivelText__click {
                 font-family: $fuente_2;
                 color: $color_tipografia2;
-                @include animation (0, 2s, infinite)
             }
         }
 
@@ -90,15 +79,12 @@ body {
         justify-content: space-evenly;
         align-items: center;
         object-fit: cover;
-        &:hover {
-            @include animation (0, 1s, 2)
-        }
 
         .material-icons {
             font-family: 'Material Icons';
             font-weight: 200;
             font-style: normal;
-            font-size: 28px;
+            font-size: 24px;
             line-height: 1;
             text-transform: none;
             letter-spacing: normal;
@@ -128,30 +114,26 @@ body {
 
         p {
             @include main_text;
-            @include animation (1s, 2s, 2);
         }
     }
 
     .fotoArte {
         margin-top: 5%;
         object-fit: cover;
-        @include animation (1s, 2s, 1);
 
         .fotoArte__item {
             @include wrap-dashed-round;
-
             &:hover {
                 cursor: grab;
-                @include animation (0, 1s, 1)
+                @include animation (1s, 1s, 1)
             }
         }
 
         .fotoArte__text {
             @include main_text;
-
             &:hover {
                 cursor: grab;
-                @include animation (0, 2s, 1);
+                @include animation (1s, 1s, 1)
             }
         }
     }
@@ -159,14 +141,13 @@ body {
     .fotoCiencia {
         margin-bottom: 5%;
         object-fit: cover;
-        @include animation (1s, 3s, 1);
 
         .fotoCiencia__item {
             @include wrap-dashed-round;
 
             &:hover {
                 cursor: grab;
-                @include animation (0, 2s, 1);
+                @include animation (1s, 1s, 1);
             }
         }
 
@@ -175,7 +156,7 @@ body {
 
             &:hover {
                 cursor: grab;
-                @include animation (0, 2s, 1);
+                @include animation (1s, 1s, 1);
             }
         }
     }
@@ -194,11 +175,6 @@ body {
         .videoAmbiental__text {
             @include main_text;
             padding: $padding;
-
-            &:hover {
-                cursor: grab;
-                @include animation (0, 2s, 1)
-            }
         }
     }
 
@@ -214,15 +190,13 @@ body {
             cursor: pointer;
             border-radius: 40%;
             height: 24px;
-            @include animation (0, 2s, infinite)
         }
     }
 
-    
+// Estilos para el formulario de contacto
     .main_contacto {
     h2 {
         @include H2;
-        @include animation (1s, 2s, 2)
     }
 
     .contacto {
@@ -332,8 +306,7 @@ body {
     .main_inicial {
     h2 {
         @include H2;
-        @include animation (1s, 2s, 2);
-    }
+        }
 
     .inicial_text1 {
         @include main_text
@@ -368,11 +341,10 @@ body {
     .main_primaria {
     h2 {
         @include H2;
-        @include animation (1s, 2s, 2);
     }
 
     .primaria_text1 {
-        @include main_text
+        @include main_text;
     }
 
     .propositos {
