@@ -6,6 +6,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #0D1B2A;
+  overflow-x: hidden;
   /* Estilos de la página institucional */ }
   body .header {
     background-image: radial-gradient(circle, #435368, #0D1B2A);
@@ -92,13 +93,13 @@ body {
       margin-bottom: 2rem; }
       @media (max-width: 767px) {
         body .nivelText p, body .nivelText .main_institucional .institucional_text1, body .main_institucional .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, body .main_institucional .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, body .main_institucional .nivelText .enlace_medios {
-          font-size: medium; } }
+          font-size: x-large; } }
       @media (max-width: 575px) {
         body .nivelText p, body .nivelText .main_institucional .institucional_text1, body .main_institucional .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, body .main_institucional .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, body .main_institucional .nivelText .enlace_medios {
-          font-size: small; } }
+          font-size: medium; } }
       @media (max-width: 302px) {
         body .nivelText p, body .nivelText .main_institucional .institucional_text1, body .main_institucional .nivelText .institucional_text1, body .nivelText .main_institucional .institucional_text2, body .main_institucional .nivelText .institucional_text2, body .nivelText .main_institucional .enlace_medios, body .main_institucional .nivelText .enlace_medios {
-          font-size: x-small; } }
+          font-size: small; } }
   body .fotoArte {
     margin-top: 5%;
     object-fit: cover; }
@@ -121,13 +122,13 @@ body {
       margin-bottom: 2rem; }
       @media (max-width: 767px) {
         body .fotoArte .fotoArte__text {
-          font-size: medium; } }
+          font-size: x-large; } }
       @media (max-width: 575px) {
         body .fotoArte .fotoArte__text {
-          font-size: small; } }
+          font-size: medium; } }
       @media (max-width: 302px) {
         body .fotoArte .fotoArte__text {
-          font-size: x-small; } }
+          font-size: small; } }
       body .fotoArte .fotoArte__text:hover {
         cursor: grab;
         animation: pulse;
@@ -156,13 +157,13 @@ body {
       margin-bottom: 2rem; }
       @media (max-width: 767px) {
         body .fotoCiencia .fotoCiencia__text {
-          font-size: medium; } }
+          font-size: x-large; } }
       @media (max-width: 575px) {
         body .fotoCiencia .fotoCiencia__text {
-          font-size: small; } }
+          font-size: medium; } }
       @media (max-width: 302px) {
         body .fotoCiencia .fotoCiencia__text {
-          font-size: x-small; } }
+          font-size: small; } }
       body .fotoCiencia .fotoCiencia__text:hover {
         cursor: grab;
         animation: pulse;
@@ -212,13 +213,13 @@ body {
       padding: 2%; }
       @media (max-width: 767px) {
         body .videoAmbiental .videoAmbiental__text {
-          font-size: medium; } }
+          font-size: x-large; } }
       @media (max-width: 575px) {
         body .videoAmbiental .videoAmbiental__text {
-          font-size: small; } }
+          font-size: medium; } }
       @media (max-width: 302px) {
         body .videoAmbiental .videoAmbiental__text {
-          font-size: x-small; } }
+          font-size: small; } }
   body .footer {
     background-image: radial-gradient(circle, #435368, #0D1B2A);
     padding: 4px;
@@ -301,15 +302,15 @@ body {
     body .location .contactBlock p, body .location .contactBlock .main_institucional .institucional_text1, body .main_institucional .location .contactBlock .institucional_text1, body .location .contactBlock .main_institucional .institucional_text2, body .main_institucional .location .contactBlock .institucional_text2, body .location .contactBlock .main_institucional .enlace_medios, body .main_institucional .location .contactBlock .enlace_medios {
       font-family: "Josefin Sans", sans-serif;
       color: #E0E1DD;
-      font-size: medium;
+      font-size: x-large;
       margin-top: 1rem;
       margin-bottom: 1rem; }
       @media (max-width: 575px) {
         body .location .contactBlock p, body .location .contactBlock .main_institucional .institucional_text1, body .main_institucional .location .contactBlock .institucional_text1, body .location .contactBlock .main_institucional .institucional_text2, body .main_institucional .location .contactBlock .institucional_text2, body .location .contactBlock .main_institucional .enlace_medios, body .main_institucional .location .contactBlock .enlace_medios {
-          font-size: small; } }
+          font-size: medium; } }
       @media (max-width: 302px) {
         body .location .contactBlock p, body .location .contactBlock .main_institucional .institucional_text1, body .main_institucional .location .contactBlock .institucional_text1, body .location .contactBlock .main_institucional .institucional_text2, body .main_institucional .location .contactBlock .institucional_text2, body .location .contactBlock .main_institucional .enlace_medios, body .main_institucional .location .contactBlock .enlace_medios {
-          font-size: x-small; } }
+          font-size: small; } }
   body .main_institucional h2 {
     font-family: "Josefin Sans", sans-serif;
     font-size: xx-large;
@@ -324,13 +325,13 @@ body {
     margin-bottom: 2rem; }
     @media (max-width: 767px) {
       body .main_institucional p, body .main_institucional .institucional_text1, body .main_institucional .institucional_text2, body .main_institucional .enlace_medios {
-        font-size: medium; } }
+        font-size: x-large; } }
     @media (max-width: 575px) {
       body .main_institucional p, body .main_institucional .institucional_text1, body .main_institucional .institucional_text2, body .main_institucional .enlace_medios {
-        font-size: small; } }
+        font-size: medium; } }
     @media (max-width: 302px) {
       body .main_institucional p, body .main_institucional .institucional_text1, body .main_institucional .institucional_text2, body .main_institucional .enlace_medios {
-        font-size: x-small; } }
+        font-size: small; } }
   body .main_institucional .institucional_video {
     flex-wrap: wrap;
     border-style: dashed;
@@ -377,13 +378,13 @@ body {
     margin-bottom: 2rem; }
     @media (max-width: 767px) {
       body .main_inicial .inicial_text1 {
-        font-size: medium; } }
+        font-size: x-large; } }
     @media (max-width: 575px) {
       body .main_inicial .inicial_text1 {
-        font-size: small; } }
+        font-size: medium; } }
     @media (max-width: 302px) {
       body .main_inicial .inicial_text1 {
-        font-size: x-small; } }
+        font-size: small; } }
   body .main_inicial .propositos, body .main_inicial .talleres {
     line-height: 1.5rem;
     list-style: square; }
@@ -411,13 +412,13 @@ body {
     margin-bottom: 2rem; }
     @media (max-width: 767px) {
       body .main_primaria .primaria_text1 {
-        font-size: medium; } }
+        font-size: x-large; } }
     @media (max-width: 575px) {
       body .main_primaria .primaria_text1 {
-        font-size: small; } }
+        font-size: medium; } }
     @media (max-width: 302px) {
       body .main_primaria .primaria_text1 {
-        font-size: x-small; } }
+        font-size: small; } }
   body .main_primaria .propositos, body .main_primaria .talleres {
     line-height: 1.5rem;
     list-style: square; }
@@ -449,13 +450,13 @@ body {
     margin-bottom: 2rem; }
     @media (max-width: 767px) {
       body .main_secu .secu_text1 {
-        font-size: medium; } }
+        font-size: x-large; } }
     @media (max-width: 575px) {
       body .main_secu .secu_text1 {
-        font-size: small; } }
+        font-size: medium; } }
     @media (max-width: 302px) {
       body .main_secu .secu_text1 {
-        font-size: x-small; } }
+        font-size: small; } }
   body .main_secu .propositos, body .main_secu .talleres {
     line-height: 1.5rem;
     list-style: square; }

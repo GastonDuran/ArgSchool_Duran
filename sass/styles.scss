@@ -11,6 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: $color_fondo_oscuro;
+    overflow-x: hidden;
 // Estilos para el header
     .header {
         background-image: $fondo_gradiente;

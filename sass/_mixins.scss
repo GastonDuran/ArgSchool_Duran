@@ -29,28 +29,28 @@
     margin-bottom: 2rem;
 
     @media (max-width:767px) {
-        font-size: map-get($fnsz,md);
+        font-size: map-get($fnsz,xl);
     }
     @media (max-width:575px) {
-        font-size: map-get($fnsz,sm);
+        font-size: map-get($fnsz,md);
     }
     @media (max-width:302px) {
-        font-size: map-get($fnsz,xs);
+        font-size: map-get($fnsz,sm);
     }
 }
 
 @mixin sub_text {
     font-family: $fuente_2;
     color: $color_tipografia2;
-    font-size: map-get($fnsz, md);
+    font-size: map-get($fnsz, xl);
     margin-top: 1rem;
     margin-bottom: 1rem;
 
     @media (max-width:575px) {
-        font-size: map-get($fnsz,sm);
+        font-size: map-get($fnsz,md);
     }
     @media (max-width:302px) {
-        font-size: map-get($fnsz,xs);
+        font-size: map-get($fnsz,sm);
     }
 }
 
