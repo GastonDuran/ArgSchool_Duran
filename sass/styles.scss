@@ -308,7 +308,14 @@ body {
     h2 {
         @include H2;
         }
-
+    #scroll_up {
+        img {
+            @include scroll_up_resp;
+        }
+        right: 5px;
+        bottom: 5px;
+        z-index: auto;
+    }
     .inicial_text1 {
         @include main_text
     }
@@ -343,7 +350,14 @@ body {
     h2 {
         @include H2;
     }
-
+    #scroll_up {
+        img {
+            @include scroll_up_resp;
+        }
+        right: 5px;
+        bottom: 5px;
+        z-index: auto;
+    }
     .primaria_text1 {
         @include main_text;
     }
@@ -379,7 +393,14 @@ body {
         @include H2;
         @include animation (1s, 2s, 2);
     }
-
+    #scroll_up {
+        img {
+            @include scroll_up_resp;
+        }
+        right: 5px;
+        bottom: 5px;
+        z-index: auto;
+    }
     .secu_text1 {
         @include main_text
     }

@@ -82,3 +82,31 @@
         height: 65px;
     }
 }
+@mixin scroll_up_resp {
+    @media (max-width:1200px) {
+        width: 60px;
+        height: 60px;
+    }
+    @media (max-width:1024px) {
+        width: 50px;
+        height: 50px;
+    }
+    @media (max-width:801px) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media (max-width:601px) {
+        width: 30px;
+        height: 30px;
+    }
+
+    @media (max-width:401px) {
+        width: 20px;
+        height: 20px;
+    }
+    @media (max-width:251px) {
+        width: 15px;
+        height: 15px;
+    }
+}

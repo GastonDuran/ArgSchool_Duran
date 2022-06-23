@@ -370,6 +370,34 @@ body {
     color: #E0E1DD;
     margin-top: 1rem;
     margin-bottom: 5%; }
+  body .main_inicial #scroll_up {
+    right: 5px;
+    bottom: 5px;
+    z-index: auto; }
+    @media (max-width: 1200px) {
+      body .main_inicial #scroll_up img {
+        width: 60px;
+        height: 60px; } }
+    @media (max-width: 1024px) {
+      body .main_inicial #scroll_up img {
+        width: 50px;
+        height: 50px; } }
+    @media (max-width: 801px) {
+      body .main_inicial #scroll_up img {
+        width: 40px;
+        height: 40px; } }
+    @media (max-width: 601px) {
+      body .main_inicial #scroll_up img {
+        width: 30px;
+        height: 30px; } }
+    @media (max-width: 401px) {
+      body .main_inicial #scroll_up img {
+        width: 20px;
+        height: 20px; } }
+    @media (max-width: 251px) {
+      body .main_inicial #scroll_up img {
+        width: 15px;
+        height: 15px; } }
   body .main_inicial .inicial_text1 {
     font-family: "Red Rose", cursive;
     color: #E0E1DD;
@@ -404,6 +432,34 @@ body {
     color: #E0E1DD;
     margin-top: 1rem;
     margin-bottom: 5%; }
+  body .main_primaria #scroll_up {
+    right: 5px;
+    bottom: 5px;
+    z-index: auto; }
+    @media (max-width: 1200px) {
+      body .main_primaria #scroll_up img {
+        width: 60px;
+        height: 60px; } }
+    @media (max-width: 1024px) {
+      body .main_primaria #scroll_up img {
+        width: 50px;
+        height: 50px; } }
+    @media (max-width: 801px) {
+      body .main_primaria #scroll_up img {
+        width: 40px;
+        height: 40px; } }
+    @media (max-width: 601px) {
+      body .main_primaria #scroll_up img {
+        width: 30px;
+        height: 30px; } }
+    @media (max-width: 401px) {
+      body .main_primaria #scroll_up img {
+        width: 20px;
+        height: 20px; } }
+    @media (max-width: 251px) {
+      body .main_primaria #scroll_up img {
+        width: 15px;
+        height: 15px; } }
   body .main_primaria .primaria_text1 {
     font-family: "Red Rose", cursive;
     color: #E0E1DD;
@@ -442,6 +498,34 @@ body {
     animation-delay: 1s;
     animation-duration: 2s;
     animation-iteration-count: 2; }
+  body .main_secu #scroll_up {
+    right: 5px;
+    bottom: 5px;
+    z-index: auto; }
+    @media (max-width: 1200px) {
+      body .main_secu #scroll_up img {
+        width: 60px;
+        height: 60px; } }
+    @media (max-width: 1024px) {
+      body .main_secu #scroll_up img {
+        width: 50px;
+        height: 50px; } }
+    @media (max-width: 801px) {
+      body .main_secu #scroll_up img {
+        width: 40px;
+        height: 40px; } }
+    @media (max-width: 601px) {
+      body .main_secu #scroll_up img {
+        width: 30px;
+        height: 30px; } }
+    @media (max-width: 401px) {
+      body .main_secu #scroll_up img {
+        width: 20px;
+        height: 20px; } }
+    @media (max-width: 251px) {
+      body .main_secu #scroll_up img {
+        width: 15px;
+        height: 15px; } }
   body .main_secu .secu_text1 {
     font-family: "Red Rose", cursive;
     color: #E0E1DD;
